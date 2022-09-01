@@ -9,7 +9,6 @@ public class MainWindow {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException | ClassNotFoundException e) {
-            System.out.println(e.getMessage());
             e.printStackTrace();
         }
 
