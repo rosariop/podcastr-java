@@ -1,4 +1,4 @@
-package de.podcastr.desktop.controller.view;
+package de.podcastr.desktop.view;
 
 public enum Laf {
     Win("com.sun.java.swing.plaf.motif.MotifLookAndFeel");

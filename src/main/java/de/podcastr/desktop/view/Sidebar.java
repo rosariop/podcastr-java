@@ -1,12 +1,10 @@
-package de.podcastr.desktop.controller.view;
+package de.podcastr.desktop.view;
 
-import de.podcastr.desktop.controller.controller.B1Action;
-import lombok.extern.slf4j.Slf4j;
+import de.podcastr.desktop.controller.B1Action;
 
 import javax.swing.*;
 import java.awt.*;
 
-@Slf4j
 public class Sidebar extends Component {
 
     public Sidebar() {

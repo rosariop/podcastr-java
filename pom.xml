@@ -27,23 +27,33 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
-        </dependency>
     </dependencies>
 
     <build>
+        <finalName>podcastr</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.8.0</version>
                 <configuration>
                     <source>11</source>
                     <target>11</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>de.podcastr.desktop.Podcastr</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+
             </plugin>
         </plugins>
     </build>

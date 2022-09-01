@@ -1,4 +1,4 @@
-package de.podcastr.desktop.controller.controller;
+package de.podcastr.desktop.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

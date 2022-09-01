@@ -1,18 +1,15 @@
-package de.podcastr.desktop.controller.view;
-
-import lombok.extern.slf4j.Slf4j;
+package de.podcastr.desktop.view;
 
 import javax.swing.*;
 import java.awt.*;
 
-@Slf4j
 public class MainWindow {
 
     public static void start(){
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException | ClassNotFoundException e) {
-            log.error(e.getMessage());
+            System.out.println(e.getMessage());
             e.printStackTrace();
         }
 

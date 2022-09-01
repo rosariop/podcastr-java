@@ -1,6 +1,6 @@
-package de.podcastr.desktop.controller;
+package de.podcastr.desktop;
 
-import de.podcastr.desktop.controller.view.MainWindow;
+import de.podcastr.desktop.view.MainWindow;
 
 public class Podcastr {
     public static void main(String[] args) {
