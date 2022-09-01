@@ -5,6 +5,8 @@ import java.awt.*;
 
 public class MainWindow {
 
+    private MainWindow(){}
+
     public static void start(){
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
