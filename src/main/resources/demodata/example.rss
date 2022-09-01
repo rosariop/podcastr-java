@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Dafna's Zebra Podcast</title>
+    <itunes:owner>
+        <itunes:email>dafna@beispiel.de</itunes:email>
+    </itunes:owner>
+    <itunes:author>Dafna</itunes:author>
+    <description>Ein Leitfaden für alle, die ein Zebra als Haustier wollen.</description>
+    <itunes:image href="https://www.beispiel.de/podcasts/dafnas-zebras/img/dafna-zebra-pod-logo.jpg"/>
+    <language>de-de</language>
+    <link>https://www.beispiel.de/podcasts/dafnas-zebras/</link>
+
+    <!-- Folge -->
+    <item>
+      <title>Top-10-Missverständnisse über das Leben mit einem Zebra</title>
+      <description>Hier sind 10 Missverständnisse über das Pflegen, Füttern und Züchten dieser liebenswerten gestreiften Tiere.</description>
+      <pubDate>Die., 14. März 2017 12:00:00 GMT</pubDate>
+      <enclosure url="https://www.beispiel.de/podcasts/dafnas-zebras/audio/toptenmyths.mp3"
+                 type="audio/mpeg" length="34216300"/>
+      <itunes:duration>30:00</itunes:duration>
+      <guid isPermaLink="false">dzpodtop10</guid>
+    </item>
+    <!-- Folge -->
+    <item>
+      <title>Die Streifen schön und sauber halten</title>
+      <description>Ein Zebra sauber zu halten, braucht viel Zeit, aber es lohnt sich.</description>
+      <pubDate>Fri, 24 Feb 2017 12:00:00 GMT</pubDate>
+      <enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/cleanstripes.mp3"
+                 type="audio/mpeg" length="26004388"/>
+      <itunes:duration>22:48</itunes:duration>
+      <guid>dzpodclean</guid>
+    </item>
+  
+  </channel>
+</rss>
