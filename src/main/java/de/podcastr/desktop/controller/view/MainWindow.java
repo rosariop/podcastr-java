@@ -17,24 +17,36 @@ public class MainWindow {
         }
 
         //frame
-        JFrame frame = new JFrame("a random title");
-        frame.setSize(800,600);
-        frame.setLocationRelativeTo(null);
-
-        //panel
-        JPanel panel = new JPanel();
-        frame.setContentPane(panel);
-
+        JFrame frame = buildFrame();
         //title
-        JLabel title = new JLabel("Podcastr App");
-        title.setFont(new Font(title.getFont().getName(), Font.PLAIN, 24));
-        panel.add(title, BorderLayout.NORTH);
-
+        placeTitle(frame);
         //sidebar
-        Sidebar sidebar = new Sidebar();
-        panel.add(sidebar.buildSidebar(), BorderLayout.WEST);
+        placeSidebar(frame);
 
         frame.setVisible(true);
+    }
+
+    private static void placeTitle(JFrame frame) {
+        JLabel title = new JLabel("Podcastr App",  SwingConstants.CENTER);
+        title.setFont(new Font(title.getFont().getName(), Font.PLAIN, 24));
+        frame.add(title, BorderLayout.NORTH);
+    }
+
+    private static void placeSidebar(JFrame frame) {
+        JPanel panel = new JPanel();
+        Sidebar sidebar = new Sidebar();
+        JScrollPane sidebarPane = sidebar.buildSidebar(new JPanel());
+        panel.add(sidebarPane);
+        frame.add(panel, BorderLayout.WEST);
+    }
+
+    private static JFrame buildFrame() {
+        JFrame frame = new JFrame("a random title");
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setSize(800,600);
+        frame.setLayout(new BorderLayout());
+        frame.setLocationRelativeTo(null);
+        return frame;
     }
 
 }
