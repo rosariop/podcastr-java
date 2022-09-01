@@ -3,12 +3,12 @@ package de.podcastr.desktop.view;
 import de.podcastr.desktop.controller.B1Action;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class Sidebar extends Component {
+public class Sidebar extends JScrollPane {
 
-    public Sidebar() {
-    }
+    private Sidebar(){}
+
+    private static Sidebar instance;
 
     public JScrollPane buildSidebar(JPanel panel){
         JScrollPane scrollPane = new JScrollPane (panel,
@@ -21,4 +21,12 @@ public class Sidebar extends Component {
         panel.add(b1);
         return scrollPane;
     }
+
+    public static Sidebar getInstance(){
+        if (instance == null){
+            instance = new Sidebar();
+        }
+        return instance;
+    }
+
 }

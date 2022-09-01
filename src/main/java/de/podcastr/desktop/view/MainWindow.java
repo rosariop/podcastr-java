@@ -31,7 +31,7 @@ public class MainWindow {
 
     private static void placeSidebar(JFrame frame) {
         JPanel panel = new JPanel();
-        Sidebar sidebar = new Sidebar();
+        Sidebar sidebar = Sidebar.getInstance();
         JScrollPane sidebarPane = sidebar.buildSidebar(new JPanel());
         panel.add(sidebarPane);
         frame.add(panel, BorderLayout.WEST);
