@@ -1,6 +1,9 @@
 package de.podcastr.desktop.view;
 
 import javax.swing.*;
+
+import com.formdev.flatlaf.FlatDarculaLaf;
+
 import java.awt.*;
 
 public class MainWindow {
@@ -8,11 +11,7 @@ public class MainWindow {
     private MainWindow(){}
 
     public static void start(){
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        FlatDarculaLaf.setup();
 
         //frame
         JFrame frame = buildFrame();
