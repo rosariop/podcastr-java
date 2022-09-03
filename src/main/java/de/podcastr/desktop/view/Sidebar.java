@@ -23,8 +23,8 @@ public class Sidebar extends JScrollPane {
 
         JScrollPane scrollPane = new JScrollPane (panel,
                 ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
-                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-        scrollPane.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane.setAlignmentY(Component.CENTER_ALIGNMENT);
         scrollPane.setPreferredSize(new Dimension(125, 400));
         /*TODO: -> model -> datenbank -> load podcasts*/
         for(int i = 0; i < 20; i++){
